@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-const API = 'https://knowledgeai-assisstent.onrender.com'
+const API = 'http://127.0.0.1:8000'
 
 function AnimatedNumber({ value }) {
   const [display, setDisplay] = useState(0)
