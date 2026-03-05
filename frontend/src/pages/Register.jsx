@@ -25,7 +25,7 @@ export default function Register() {
     if (password.length < 6) return toast.error('Password must be at least 6 characters')
     setLoading(true)
     try {
-      await axios.post('http://127.0.0.1:8000/auth/register', { email, username, password })
+      await axios.post('https://knowledgeai-assisstent.onrender.com/auth/register', { email, username, password })
       toast.success('Account created! Please sign in.')
       navigate('/login')
     } catch (err) {

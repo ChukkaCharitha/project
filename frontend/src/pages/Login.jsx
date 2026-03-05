@@ -23,7 +23,7 @@ export default function Login() {
     if (!email || !password) return toast.error('Please fill all fields')
     setLoading(true)
     try {
-      const res = await axios.post('http://127.0.0.1:8000/auth/login', { email, password })
+      const res = await axios.post('https://knowledgeai-assisstent.onrender.com/auth/login', { email, password })
       localStorage.setItem('token', res.data.access_token)
       toast.success('Welcome back!')
       navigate('/dashboard')
