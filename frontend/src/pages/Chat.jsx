@@ -23,7 +23,7 @@ export default function Chat() {
 
   useEffect(() => {
     if (!localStorage.getItem('token')) { navigate('/login'); return }
-    axios.get('http://127.0.0.1:8000/documents/', { headers: getHeaders() })
+    axios.get('https://knowledgeai-assisstent.onrender.com/documents/', { headers: getHeaders() })
       .then(r => setDocs(r.data)).catch(() => {}).finally(() => setReady(true))
   }, [])
 
@@ -42,7 +42,7 @@ export default function Chat() {
     setMessages(prev => [...prev, { role: 'user', text: q, time: new Date() }])
     setQuestion(''); setLoading(true)
     try {
-      const res = await axios.post('http://127.0.0.1:8000/chat/ask', { question: q }, { headers: getHeaders() })
+      const res = await axios.post('https://knowledgeai-assisstent.onrender.com/chat/ask', { question: q }, { headers: getHeaders() })
       setMessages(prev => [...prev, { role: 'ai', text: res.data.answer, time: new Date() }])
     } catch {
       toast.error('Failed to get answer')
