@@ -3,12 +3,12 @@ uvicorn[standard]
 sqlalchemy
 psycopg2-binary
 python-dotenv
-anthropic
 python-multipart
 python-jose[cryptography]
 passlib[bcrypt]
 alembic
 pgvector
 pypdf2
-langchain
-langchain-anthropic
+groq
+sentence-transformers
+numpy
