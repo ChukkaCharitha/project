@@ -1,6 +1,5 @@
 .env 
 backend/.env
-backend/app/services/ai_service.py 
 _pycache_/ 
 *.pyc 
 node_modules/ 
