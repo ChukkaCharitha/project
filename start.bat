@@ -1,0 +1,2 @@
+start cmd /k "cd C:\Users\chari\ai-knowledge-assistant\backend && venv\Scripts\activate && uvicorn app.main:app --reload"
+start cmd /k "cd C:\Users\chari\ai-knowledge-assistant\frontend && npm run dev"
