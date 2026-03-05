@@ -10,5 +10,4 @@ alembic
 pgvector
 pypdf2
 groq
-sentence-transformers
 numpy
