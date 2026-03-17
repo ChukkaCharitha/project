@@ -1,6 +1,6 @@
 🧠 KnowledgeAI
 Chat with your documents using AI — Upload PDFs and text files, ask questions, and get instant intelligent answers powered by Groq LLaMA 3.3 70B.
-Live Demo
+
 Frontend (Vercel): https://your-app.vercel.app
 Backend API (Render): https://knowledgeai-assisstent.onrender.com/docs
 Features
@@ -29,9 +29,12 @@ Authentication
 Secure JWT-based login and registration
 Token stored in localStorage
 Auto-redirect on session expiry
-🛠️ Tech Stack
+
+Tech Stack
 Layer
+
 Technology
+
 Frontend
 React 18, Vite, React Router v6, Axios
 Backend
@@ -46,7 +49,9 @@ ORM
 SQLAlchemy + Alembic
 Deployment
 Vercel (Frontend) + Render (Backend)
+
 Project Structure
+
 KnowledgeAI/
 ├── frontend/                     # React + Vite frontend
 │   ├── src/
@@ -75,7 +80,9 @@ KnowledgeAI/
 │   └── requirements.txt
 │
 └── README.md
+
 Local Setup
+
 Prerequisites
 Python 3.10+
 Node.js 18+
